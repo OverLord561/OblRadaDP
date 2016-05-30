@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Oleg.Models.Outlay>
+
+@{
+    ViewBag.Title = "Review";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*@using System;
+@using System.Collections.Generic;
+@using System.Linq;
+@using System.Web;
+@using System.Web.Mvc;*@
+<div class="content">
+ <div class="row">
+
+     <div class="col-lg-9 contentMargine">
+
+@foreach(var item in Model)
+{
+    string link = "Outlaies/Review?num=" + @item.OutlayId.ToString();
+    //string way = "/Content/Images/" + @item.OutlayPhoto + ".png";
+    string way = @item.OutlayPhoto.ToString();
+    string[] split = way.Split(',');
+
+
+      
+    <h2>@Html.DisplayFor(modelItem => item.OutlayTitle)</h2>
+@Html.DisplayFor(modelItem => item.OutlayDate)<br />
+
+<div id="photo"></div>
+for(int i=0;i<split.Length;i++)
+    {
+    <p><img src="@split[i]" alt="@item.OutlayTitle"></p>
+    
+    }
+@* <img src="@item.OutlayPhoto.Split(',')[1]" alt="@item.OutlayTitle">*@
+
+
+<h4>@Html.DisplayFor(modelItem => item.OutlayOrganization)</h4>
+   <p>@Html.DisplayFor(modelItem => item.OutlayPrice)</p>
+ <p>@Html.DisplayFor(modelItem => item.OutlayMan)</p>
+
+ <p>@Html.DisplayFor(modelItem => item.OutlayContent)</p>
+
+
+
+}
+         </div>
+     </div>
+    </div>

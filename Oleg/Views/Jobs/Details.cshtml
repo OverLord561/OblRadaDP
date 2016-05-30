@@ -1,0 +1,50 @@
+﻿@model Oleg.Models.Job
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Job</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Factory.FactoryName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Factory.FactoryName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobRequirements)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobRequirements)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobDuties)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobDuties)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobConditions)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobConditions)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.JobId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

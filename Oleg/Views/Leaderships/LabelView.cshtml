@@ -1,0 +1,97 @@
+﻿@model Oleg.Models.UserComment
+@{
+    List<Oleg.Models.CustomComment> lables = ViewBag.User_Comments_List_ForThisLeader;
+    var grid = new WebGrid(source: lables, rowsPerPage: 5);
+    
+}
+
+
+
+
+@using (Html.BeginForm("Create", "UserComments"))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Залиште коментар:</legend>
+
+        <label>
+            @Html.TextBoxFor(model => model.LabelText, new { @placeholder = "Повідомлення" })
+            @Html.ValidationMessageFor(model => model.LabelText)
+        </label>
+
+        <label>
+            @Html.TextBoxFor(model => model.E_mail, new { @placeholder = "E-mail" })
+            @Html.ValidationMessageFor(model => model.E_mail)
+        </label>
+
+        <label>
+            @Html.TextBoxFor(model => model.Name, new { @placeholder = "Ім'я" })
+            @Html.ValidationMessageFor(model => model.Name)
+        </label>
+
+   
+
+        <p>
+            <input type="submit" value="Create" id="but" />
+        </p>
+    </fieldset>
+}
+
+
+<h4>Відгуків: @ViewBag.Count </h4>
+<ul id="lists" class="feedback">
+    @foreach (var v in lables)
+    {
+        <li>
+            <div class="feedback-info">
+
+
+               <div class="feedback-date">
+                    <time datetime="2015-10-10">@v.Date</time>
+                </div>
+                <div  class="feedback-name" >
+                    @if (TempData.Peek("_UserRole") as string == "Admin" || TempData.Peek("_UserRole") as string == "Moderator")
+                    {
+                        string link1 = "/UserComments/Index?name=" + @v.User_Name;
+                        string link2 = "&id=" + @v.LeadershipId;
+                        string link = link1 + link2;
+
+                        //string answer = "/UserComments/Edit?name=" + @v.User_Name+link2;
+                        string answer = "/UserComments/Edit/" + @v.CommentId;
+                        <h4><a href="@link">@v.User_Name</a></h4>
+                        
+                        <a href="@answer">Відповісти</a>
+                    }
+                    else
+                    {
+                       <h4>@v.User_Name</h4>
+                    }
+
+                </div>
+                
+            </div>
+            <div class="feedback-text">
+                 <p>@v.User_LabelText</p> 
+            </div>
+
+            <div class="feedback-answer">
+                <p>@v.Admin_Answer</p>
+            </div>
+            
+
+        </li>
+    }
+    
+     @*@grid.GetHtml(
+   
+    columns: grid.Columns(
+    
+    grid.Column(columnName: "User_Name"),
+    grid.Column(columnName: "User_LabelText",header:"Повідомлення",canSort:false),
+    grid.Column(columnName: "Date", header:"Дата")
+      
+    )
+)*@
+</ul>
+

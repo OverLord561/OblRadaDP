@@ -1,0 +1,140 @@
+﻿@model IEnumerable<Oleg.Models.Outlay>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="content">
+ <div class="row">
+    
+     <div class="col-lg-11 contentMargine">
+<h1>Роботи</h1>
+
+
+@section Picker{
+    @*<script src="~/Content/js/query.js"></script>*@
+    <script src="~/Content/js/jquery.datetimepicker.full.js"></script>
+    <script>
+
+        $.datetimepicker.setLocale('uk');
+
+        $('#datetimepicker_format').datetimepicker({ value: '2015/04/15 05:03', format: $("#datetimepicker_format_value").val() });
+        $("#datetimepicker_format_change").on("click", function (e) {
+            $("#datetimepicker_format").data('xdsoft_datetimepicker').setOptions({ format: $("#datetimepicker_format_value").val() });
+        });
+        $("#datetimepicker_format_locale").on("change", function (e) {
+            $.datetimepicker.setLocale($(e.currentTarget).val());
+        });
+
+        $('#datetimepicker').datetimepicker({
+            dayOfWeekStart: 1,
+            lang: 'uk',
+            disabledDates: ['1986/01/08', '1986/01/09', '1986/01/10'],
+            startDate: '1986/01/05'
+        });
+        $('#datetimepicker').datetimepicker({ value: '2015/04/15 05:03', step: 10 });
+
+        $('.some_class').datetimepicker({ format: "d/m/Y" });
+
+        $('#datetimepicker_dark').datetimepicker({ theme: 'dark' });
+
+
+    </script>
+}
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@using (Html.BeginForm())
+{
+    <label style="margin-right:30px;">Назва робіт</label>
+    @Html.TextBox("name")
+    <br />
+    
+    <label>Ключовы слова</label>
+    @Html.TextBox("words")
+    <br />
+    <h4>Вкажіть дату події</h4>
+    <label>Від</label>
+    <input type="text" name="start" class="some_class" value="" id="some_class_1 " />
+   
+
+    <label>До</label>
+    <input type="text" name="end" class="some_class" value="" id="some_class_2" />
+    <br />
+    
+    <label style="margin-right:13px;">Відповідальна ораганізація</label>
+    @Html.TextBox("org")
+    <br />
+    <input type="submit" name="operation" value="Шукати" />
+ 
+}
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OutlayTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OutlayOrganization)
+        </th>
+         <th>
+            @Html.DisplayNameFor(model => model.OutlayPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OutlayMan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OutlayDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OutlayContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OutlayPhoto)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        string link = "Outlaies/Review?num=" + @item.OutlayId.ToString();
+        <tr>
+            <td>
+                <a href="@link">@Html.DisplayFor(modelItem => item.OutlayTitle)</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutlayOrganization)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutlayPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutlayMan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutlayDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutlayContent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutlayPhoto)
+            </td>
+
+
+            <td>
+                @if (TempData.Peek("_UserRole") as string == "Admin")
+                {
+                    @Html.ActionLink("Edit", "Edit", new { id = item.OutlayId }) <br /> 
+            @Html.ActionLink("Details", "Details", new { id = item.OutlayId }) <br /> 
+            @Html.ActionLink("Delete", "Delete", new { id = item.OutlayId })
+                }
+            </td>
+
+        </tr>
+    }
+
+</table>
+</div>
+     </div>
+    </div>

@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Oleg.Models.Novelty>
+
+@{
+    ViewBag.Title = "Review";
+
+    AjaxOptions options = new AjaxOptions()
+    {
+        UpdateTargetId = "tabledata",
+        Url = Url.Action("Sort", "Novelties"),
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace
+
+    };
+}
+
+<div class="content">
+    <div class="row">
+
+        <div class="col-lg-3">
+
+            @using (Ajax.BeginForm(options))
+            {         
+                <div class="search">
+                    <label>Ключові слова</label>
+                    @Html.TextBox("words")
+                    <br />
+
+                    <label>Від</label>
+                    <input type="text" name="start" class="some_class" value="" id="some_class_1 " />
+                    <br />
+
+                    <label>До</label>
+                    <input type="text" name="end" class="some_class" value="" id="some_class_2" />
+                    <br />
+
+                    <input type="submit" name="operation" value="Шукати" />
+
+                </div>
+            }
+            <div id="admin">
+                <p class="adminh">Обласні та міські держадміністрації</p>
+                <dl>
+                    <dd><a class="d_ad" target="_new" href="http://www.ppu.gov.ua/">Автономна Республіка Крим</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.voladm.gov.ua/">Волинська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.adm.dp.ua/">Дніпропетровська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.donoda.gov.ua/">Донецька</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://oda.zt.gov.ua/">Житомирська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.carpathia.gov.ua/">Закарпатська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.zoda.gov.ua/">Запорізька</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.if.gov.ua/">Івано-Франківська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.kyiv-obl.gov.ua/">Київська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.kr-admin.gov.ua/">Кіровоградська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.loga.gov.ua/">Луганська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.loda.gov.ua/">Львівська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.mykolayiv-oda.gov.ua/">Миколаївська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://oda.odessa.gov.ua/">Одеська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.adm-pl.gov.ua/">Полтавська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.rv.gov.ua/sitenew">Рівненська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://sm.gov.ua/ru/">Сумська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.oda.te.gov.ua/">Тернопільська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.kharkivoda.gov.ua/">Харківська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.oda.kherson.ua/">Хeрсонська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://adm.km.ua/">Хмельницька</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://ck-oda.gov.ua/">Черкаська</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://cg.gov.ua/">Чернігівська </a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://www.oda.cv.ua/">Чернівецька</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://kievcity.gov.ua/">Місто Київ</a></dd>
+                    <dd><a class="d_ad" target="_new" href="http://sev.gov.ua/">Місто Севастополь</a></dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+
+            @* Аякс запрос вставлятиме дані в ось це місце*@
+            <div id="tabledata">
+                @foreach (var item in Model)
+                {
+
+                    string link = "Novelties/Review?num=" + @item.NoveltyId.ToString();
+                    string way = "/Content/Images/" + item.NoveltyTitle + ".png";
+        
+      
+                    <h1>@Html.DisplayFor(modelItem => item.NoveltyTitle)</h1>
+                    <span class="date">@Html.DisplayFor(modelItem => item.NoveltyDate)</span>
+                    <div class="context">@Html.DisplayFor(modelItem => item.NoveltyContent)</div>
+                   
+                    <a title="Переглянути детальну інформацію" href="@link">
+                        <img src="@way" alt="@item.NoveltyTitle">
+                    </a>
+              
+        
+                  
+         
+                    
+     
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

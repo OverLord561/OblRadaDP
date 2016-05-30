@@ -1,0 +1,71 @@
+﻿@model Oleg.Models.Novelty
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Novelty</legend>
+
+        @Html.HiddenFor(model => model.NoveltyId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NoveltyTitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NoveltyTitle)
+            @Html.ValidationMessageFor(model => model.NoveltyTitle)
+        </div>
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NoveltyShortContent)
+        </div>
+        <div id="1" class="editor-field1">
+            @Html.EditorFor(model => model.NoveltyShortContent)
+            @Html.ValidationMessageFor(model => model.NoveltyShortContent)
+        </div>
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NoveltyContent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NoveltyContent)
+            @Html.ValidationMessageFor(model => model.NoveltyContent)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NoveltyDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NoveltyDate)
+            @Html.ValidationMessageFor(model => model.NoveltyDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NoveltyPhoto)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NoveltyPhoto)
+            @Html.ValidationMessageFor(model => model.NoveltyPhoto)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

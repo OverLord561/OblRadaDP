@@ -1,0 +1,50 @@
+﻿@model Oleg.Models.Leadership
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Leadership</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LeadershipName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LeadershipName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LeadershipPost)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LeadershipPost)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LeadershipBiography)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LeadershipBiography)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LeadershipPhoto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LeadershipPhoto)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LeadershipDeclaration)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LeadershipDeclaration)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.LeadershipId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

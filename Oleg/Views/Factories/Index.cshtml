@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Oleg.Models.Factory>
+
+@{
+    ViewBag.Title = "Тип вакансій";
+    List<Oleg.Models.TypeOfFactories> firm = ViewBag.Firms;
+}
+<div class="content">
+ <div class="row">
+     
+     <div class="col-lg-11 contentMargine">
+<h1>Підприємтсва</h1>
+
+@foreach (var i in firm)
+{
+    string link = "/Factories/Index?type=" + @i.Type.ToString();
+    <ul>
+        <li><a href="@link">@i.Type</a></li>
+    </ul>
+    
+}
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using(Html.BeginForm("Index","Jobs"))
+{
+    <label>Робота</label>
+                @Html.TextBox("job")
+               
+    <label>Обо'язки</label>
+                @Html.TextBox("duty")
+                
+    <label>Освіта</label>
+    @Html.DropDownList("educ",new SelectList (new[]{String.Empty,"Вища","Середня" }))<br/>
+    
+<input type="submit" name="operation" value="Шукати" />
+}
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FactoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FactoryAdress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FactoryTelephone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FacctoryBoss)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FactoryType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    string link = "/Jobs/Index?num=" + @item.FactoryId.ToString();
+    <tr>
+        <td>
+           <a href="@link">@Html.DisplayFor(modelItem => item.FactoryName)</a> 
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FactoryAdress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FactoryTelephone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FacctoryBoss)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FactoryType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FactoryId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FactoryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FactoryId })
+        </td>
+    </tr>
+}
+
+</table>
+</div>
+     </div>
+    </div>

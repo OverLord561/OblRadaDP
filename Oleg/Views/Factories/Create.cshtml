@@ -1,0 +1,67 @@
+﻿@model Oleg.Models.Factory
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Factory</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FactoryName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FactoryName)
+            @Html.ValidationMessageFor(model => model.FactoryName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FactoryAdress)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FactoryAdress)
+            @Html.ValidationMessageFor(model => model.FactoryAdress)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FactoryTelephone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FactoryTelephone)
+            @Html.ValidationMessageFor(model => model.FactoryTelephone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FacctoryBoss)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FacctoryBoss)
+            @Html.ValidationMessageFor(model => model.FacctoryBoss)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FactoryType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FactoryType)
+            @Html.ValidationMessageFor(model => model.FactoryType)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

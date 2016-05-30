@@ -1,0 +1,67 @@
+﻿@model Oleg.Models.Job
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Job</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FactoryId, "Factory")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("FactoryId", String.Empty)
+            @Html.ValidationMessageFor(model => model.FactoryId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.JobName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.JobName)
+            @Html.ValidationMessageFor(model => model.JobName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.JobRequirements)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.JobRequirements)
+            @Html.ValidationMessageFor(model => model.JobRequirements)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.JobDuties)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.JobDuties)
+            @Html.ValidationMessageFor(model => model.JobDuties)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.JobConditions)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.JobConditions)
+            @Html.ValidationMessageFor(model => model.JobConditions)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

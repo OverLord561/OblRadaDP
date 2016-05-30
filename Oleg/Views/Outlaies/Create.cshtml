@@ -1,0 +1,84 @@
+﻿@model Oleg.Models.Outlay
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Outlay</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OutlayTitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OutlayTitle)
+            @Html.ValidationMessageFor(model => model.OutlayTitle)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OutlayOrganization)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OutlayOrganization)
+            @Html.ValidationMessageFor(model => model.OutlayOrganization)
+        </div>
+
+          <div class="editor-label">
+            @Html.LabelFor(model => model.OutlayPrice)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OutlayPrice)
+            @Html.ValidationMessageFor(model => model.OutlayPrice)
+        </div>
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OutlayMan)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OutlayMan)
+            @Html.ValidationMessageFor(model => model.OutlayMan)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OutlayDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OutlayDate)
+            @Html.ValidationMessageFor(model => model.OutlayDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OutlayContent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OutlayContent)
+            @Html.ValidationMessageFor(model => model.OutlayContent)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OutlayPhoto)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OutlayPhoto)
+            @Html.ValidationMessageFor(model => model.OutlayPhoto)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

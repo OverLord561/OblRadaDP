@@ -1,0 +1,60 @@
+﻿@model Oleg.Models.Outlay
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Outlay</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OutlayTitle)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OutlayTitle)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OutlayOrganization)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OutlayOrganization)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OutlayMan)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OutlayMan)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OutlayDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OutlayDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OutlayContent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OutlayContent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OutlayPhoto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OutlayPhoto)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

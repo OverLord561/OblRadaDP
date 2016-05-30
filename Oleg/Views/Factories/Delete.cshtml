@@ -1,0 +1,53 @@
+﻿@model Oleg.Models.Factory
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Factory</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FactoryName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FactoryName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FactoryAdress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FactoryAdress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FactoryTelephone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FactoryTelephone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FacctoryBoss)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FacctoryBoss)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FactoryType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FactoryType)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

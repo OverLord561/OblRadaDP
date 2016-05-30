@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Oleg.Models.Leadership>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="content">
+
+<p class="create">
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model)
+{
+    string way = @item.LeadershipPhoto.ToString();
+    string link = "/Leaderships/Review?num=" + @item.LeadershipId.ToString();
+    
+    <div class="row">
+    <div class="col-lg-4">
+        <a href="@link">
+            <img src="@way" height="200" width="250" style="margin: 20px;" alt="@item.LeadershipName"/>
+
+        </a>
+    </div>
+        <div class="col-lg-6 infoLeader">
+    
+    <h1>@Html.DisplayFor(modelItem => item.LeadershipName) </h1>  <h4>@Html.DisplayFor(modelItem => item.LeadershipPost)</h4> 
+    
+    
+        @Html.ActionLink("Edit", "Edit", new { id = item.LeadershipId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.LeadershipId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.LeadershipId })
+    </div>
+</div>
+    
+}
+    </div>

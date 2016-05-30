@@ -1,0 +1,46 @@
+﻿@model Oleg.Models.Novelty
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Novelty</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NoveltyTitle)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NoveltyTitle)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NoveltyContent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NoveltyContent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NoveltyDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NoveltyDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NoveltyPhoto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NoveltyPhoto)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

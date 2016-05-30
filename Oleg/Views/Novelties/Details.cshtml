@@ -1,0 +1,43 @@
+﻿@model Oleg.Models.Novelty
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Novelty</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NoveltyTitle)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NoveltyTitle)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NoveltyContent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NoveltyContent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NoveltyDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NoveltyDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NoveltyPhoto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NoveltyPhoto)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.NoveltyId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

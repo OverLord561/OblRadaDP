@@ -1,0 +1,241 @@
+D:\1\Диплом\Oleg\Oleg\bin\Oleg.dll
+D:\1\Диплом\Oleg\Oleg\bin\Oleg.pdb
+D:\1\Диплом\Oleg\Oleg\bin\Antlr3.Runtime.dll
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.AspNet.dll
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.Core.dll
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.dll
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.dll
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\1\Диплом\Oleg\Oleg\bin\EntityFramework.dll
+D:\1\Диплом\Oleg\Oleg\bin\Microsoft.Web.Infrastructure.dll
+D:\1\Диплом\Oleg\Oleg\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\1\Диплом\Oleg\Oleg\bin\Newtonsoft.Json.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Net.Http.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Net.Http.WebRequest.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Helpers.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Mvc.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Optimization.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Razor.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.WebPages.Deployment.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.WebPages.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.WebPages.Razor.dll
+D:\1\Диплом\Oleg\Oleg\bin\WebGrease.dll
+D:\1\Диплом\Oleg\Oleg\bin\WebMatrix.Data.dll
+D:\1\Диплом\Oleg\Oleg\bin\WebMatrix.WebData.dll
+D:\1\Диплом\Oleg\Oleg\bin\EntityFramework.xml
+D:\1\Диплом\Oleg\Oleg\bin\Newtonsoft.Json.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Net.Http.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Net.Http.WebRequest.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Helpers.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Mvc.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Razor.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.WebPages.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.WebPages.Deployment.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.WebPages.Razor.xml
+D:\1\Диплом\Oleg\Oleg\bin\WebMatrix.Data.xml
+D:\1\Диплом\Oleg\Oleg\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\1\Диплом\Oleg\Oleg\bin\WebMatrix.WebData.xml
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.AspNet.xml
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.Core.xml
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.xml
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.xml
+D:\1\Диплом\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\1\Диплом\Oleg\Oleg\bin\ru\EntityFramework.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Net.Http.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Net.Http.WebRequest.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.Helpers.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.Mvc.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.Optimization.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.Razor.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.WebPages.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\WebMatrix.Data.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\WebMatrix.WebData.resources.dll
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.InitialCreate.resources
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB.resources
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB1.resources
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB2.resources
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.OutLay.resources
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.Vacansions.resources
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.LeaderShip.resources
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.csproj.GenerateResource.Cache
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.dll
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.pdb
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.UserComments.resources
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.ddd.resources
+D:\1\Диплом\Oleg\Oleg\bin\System.Net.Http.Formatting.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Http.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Http.WebHost.dll
+D:\1\Диплом\Oleg\Oleg\bin\System.Net.Http.Formatting.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Http.xml
+D:\1\Диплом\Oleg\Oleg\bin\System.Web.Http.WebHost.xml
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Net.Http.Formatting.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.Http.resources.dll
+D:\1\Диплом\Oleg\Oleg\bin\ru\System.Web.Http.WebHost.resources.dll
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.Migrations.Answers.resources
+D:\1\Диплом\Oleg\Oleg\bin\Oleg.dll.config
+D:\1\Диплом\Oleg\Oleg\obj\Debug\Oleg.csprojResolveAssemblyReference.cache
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\Oleg.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\Oleg.pdb
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\Antlr3.Runtime.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.AspNet.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.Core.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\EntityFramework.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\Microsoft.Web.Infrastructure.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\Newtonsoft.Json.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Net.Http.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Net.Http.Formatting.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Net.Http.WebRequest.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Helpers.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Http.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Http.WebHost.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Mvc.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Optimization.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Razor.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.WebPages.Deployment.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.WebPages.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.WebPages.Razor.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\WebGrease.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\WebMatrix.Data.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\WebMatrix.WebData.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\EntityFramework.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\Newtonsoft.Json.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Net.Http.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Net.Http.Formatting.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Net.Http.WebRequest.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Helpers.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Http.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Http.WebHost.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Mvc.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.Razor.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.WebPages.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.WebPages.Deployment.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\System.Web.WebPages.Razor.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\WebMatrix.Data.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\WebMatrix.WebData.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.AspNet.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.Core.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\EntityFramework.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Net.Http.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Net.Http.Formatting.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Net.Http.WebRequest.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.Helpers.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.Http.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.Http.WebHost.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.Mvc.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.Optimization.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.Razor.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.WebPages.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\WebMatrix.Data.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\bin\ru\WebMatrix.WebData.resources.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.csprojResolveAssemblyReference.cache
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.InitialCreate.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB1.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB2.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.OutLay.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.Vacansions.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.LeaderShip.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.UserComments.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.ddd.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.Migrations.Answers.resources
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.csproj.GenerateResource.Cache
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.dll
+D:\Амсу\4 курс\диплом олег\Oleg\Oleg\obj\Debug\Oleg.pdb
+F:\Диплом бакалавра\Oleg\Oleg\bin\Oleg.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\Oleg.pdb
+F:\Диплом бакалавра\Oleg\Oleg\bin\Antlr3.Runtime.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.AspNet.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.Core.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.Consumer.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\EntityFramework.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\Microsoft.Web.Infrastructure.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\Microsoft.Web.WebPages.OAuth.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\Newtonsoft.Json.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Net.Http.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Net.Http.Formatting.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Net.Http.WebRequest.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Helpers.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Http.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Http.WebHost.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Mvc.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Optimization.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Razor.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.WebPages.Deployment.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.WebPages.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.WebPages.Razor.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\WebGrease.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\WebMatrix.Data.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\WebMatrix.WebData.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\EntityFramework.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\Newtonsoft.Json.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Net.Http.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Net.Http.Formatting.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Net.Http.WebRequest.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Helpers.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Http.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Http.WebHost.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Mvc.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.Razor.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.WebPages.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.WebPages.Deployment.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\System.Web.WebPages.Razor.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\WebMatrix.Data.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\Microsoft.Web.WebPages.OAuth.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\WebMatrix.WebData.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.AspNet.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.Core.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.Consumer.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.OAuth.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\EntityFramework.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Net.Http.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Net.Http.Formatting.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Net.Http.WebRequest.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.Helpers.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.Http.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.Http.WebHost.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.Mvc.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.Optimization.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.Razor.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.WebPages.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.WebPages.Deployment.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\System.Web.WebPages.Razor.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\WebMatrix.Data.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\bin\ru\WebMatrix.WebData.resources.dll
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.csprojResolveAssemblyReference.cache
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.InitialCreate.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB1.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.DB2.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.OutLay.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.Vacansions.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.LeaderShip.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.UserComments.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.ddd.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.Migrations.Answers.resources
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.csproj.GenerateResource.Cache
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.dll
+F:\Диплом бакалавра\Oleg\Oleg\obj\Debug\Oleg.pdb

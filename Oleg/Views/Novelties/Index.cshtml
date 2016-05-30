@@ -1,0 +1,140 @@
+﻿@model  IEnumerable<Oleg.Models.Novelty>
+
+@{
+    Layout = null;
+    ViewBag.Title = "Index";
+
+    AjaxOptions options = new AjaxOptions()
+    {
+        UpdateTargetId = "tabledata",
+        Url = Url.Action("Sort", "Novelties"),
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace
+
+    };
+    List<Oleg.Models.Novelty> top = ViewBag.Top;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+
+
+    @* бібліотеки, що відповідають за аякс*@
+    <script type="text/javascript" src="~/Scripts/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+
+</head>
+<body>
+    <div class="carousel-box">
+    <div id="carousel" class="owl-carousel owl-theme">
+        @foreach (var photo in top)
+        {
+
+            string link = "Novelties/Review?num=" + @photo.NoveltyId.ToString();
+            string way = "/Content/Images/" + photo.NoveltyTitle + ".png";
+            
+            <a title="@photo.NoveltyTitle" href="@link">
+                <img height="280" width="220" src="@way" alt="@photo.NoveltyTitle">
+            </a>
+            
+        }
+
+        @*
+        <img src="@Model.NoveltyPhoto.Split(',')[0]" width="300" height="250" alt ="Pictures"/>
+        <img src="@Model.NoveltyPhoto.Split(',')[0]" width="300" height="250" alt ="Pictures"/>
+        <img src="@Model.NoveltyPhoto.Split(',')[0]" width="300" height="250" alt ="Pictures"/>
+        <img src="@Model.NoveltyPhoto.Split(',')[0]" width="300" height="250" alt ="Pictures"/>*@
+    </div>
+    </div>
+
+     <div class="content">
+    <div class="row">
+       
+        <div class="col-lg-3">
+           
+        @using (Ajax.BeginForm(options))
+        {         
+            <div class="search">
+                <label>Ключові слова</label>
+                @Html.TextBox("words")
+                <br />
+
+                <label>Від</label>
+                <input type="text" name="start" class="some_class" value="" id="some_class_1 " />
+                <br />
+
+                <label>До</label>
+                <input type="text" name="end" class="some_class" value="" id="some_class_2" />
+                <br />
+
+                <input type="submit" name="operation" value="Шукати" />
+
+            </div>
+        }
+            <div id="admin">
+<p class="adminh">Обласні та міські держадміністрації</p>
+<dl>
+<dd><a class="d_ad" target="_new" href="http://www.ppu.gov.ua/">Автономна Республіка Крим</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.voladm.gov.ua/">Волинська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.adm.dp.ua/">Дніпропетровська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.donoda.gov.ua/">Донецька</a></dd>
+<dd><a class="d_ad" target="_new" href="http://oda.zt.gov.ua/">Житомирська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.carpathia.gov.ua/">Закарпатська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.zoda.gov.ua/">Запорізька</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.if.gov.ua/">Івано-Франківська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.kyiv-obl.gov.ua/">Київська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.kr-admin.gov.ua/">Кіровоградська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.loga.gov.ua/">Луганська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.loda.gov.ua/">Львівська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.mykolayiv-oda.gov.ua/">Миколаївська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://oda.odessa.gov.ua/">Одеська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.adm-pl.gov.ua/">Полтавська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.rv.gov.ua/sitenew">Рівненська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://sm.gov.ua/ru/">Сумська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.oda.te.gov.ua/">Тернопільська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.kharkivoda.gov.ua/">Харківська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.oda.kherson.ua/">Хeрсонська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://adm.km.ua/">Хмельницька</a></dd>
+<dd><a class="d_ad" target="_new" href="http://ck-oda.gov.ua/">Черкаська</a></dd>
+<dd><a class="d_ad" target="_new" href="http://cg.gov.ua/">Чернігівська </a></dd>
+<dd><a class="d_ad" target="_new" href="http://www.oda.cv.ua/">Чернівецька</a></dd>
+<dd><a class="d_ad" target="_new" href="http://kievcity.gov.ua/">Місто Київ</a></dd>
+<dd><a class="d_ad" target="_new" href="http://sev.gov.ua/">Місто Севастополь</a></dd></dl>
+</div>
+    </div>
+    @if (TempData.Peek("_UserRole") as string == "Admin")
+    {
+        <p>
+            @Html.ActionLink("Create new", "Create", "Novelties")
+        </p> 
+    }
+    <div class="col-lg-6">
+
+@* Аякс запрос вставлятиме дані в ось це місце*@
+    <div id="tabledata">
+        @Html.Action("Sort")
+    </div>
+        </div>
+        <div class="col-lg-3">
+            <a href="http://www.vin.gov.ua/web/vinoda.nsf/web_alldocs/DocNHJBU" target="_blank">
+                <img style="margin:10px 0 10px 0;width:222px" src="~/Images/tel.gif"></a>
+            <a href="http://www.vin.gov.ua/web/vinoda.nsf/webgr_view/Gr3SBXX?OpenDocument&amp;count=25&amp;RestrictToCategory=Gr3SBXX" target="_blank">
+                <img style="margin:0 0 10px 0;width:222px" src="~/Images/ato.gif"></a>
+            <a href="http://www.vpo.gov.ua" target="_blank">
+                <img style="margin:0 0 10px 0;width:222px" src="~/Images/vajluvo.gif"></a>
+            <a href="http://vin.gov.ua/web/vinoda.nsf/webgr_view/Gr8PB39?OpenDocument&amp;count=25&amp;RestrictToCategory=Gr8PB39" target="_blank">
+                <img style="margin:0 0 10px 0;width:222px" src="~/Images/kontrakt.gif"></a>
+            <a href="https://www.ukr.net/news/vinnitsa.html" target="_blank">
+                <img style="margin:0 0 10px 0;width:222px" src="~/Images/ukrnet.gif"></a>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

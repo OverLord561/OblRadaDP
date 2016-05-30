@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Oleg.Models.Novelty>
+
+
+<table>
+
+    @foreach (var item in Model)
+    {
+
+        string link = "/Novelties/Review?num=" + @item.NoveltyId.ToString();
+        string way = "/Content/Images/" + item.NoveltyTitle + ".png";
+        
+        <tr>
+            @if (TempData.Peek("_UserRole") as string == "Admin")
+            {
+                <td>
+                    @Html.DisplayFor(model => item.NoveltyId)
+                </td>
+            }
+            <td>
+                <div class="newsnode">
+                    <h3><a href=" @link">
+                        @Html.DisplayFor(modelItem => item.NoveltyTitle)</a>&nbsp;
+                        <span class="date"> @Html.DisplayFor(modelItem => item.NoveltyDate)</span></h3>
+                    <img width="150" src="@way" alt="@item.NoveltyTitle"> @Html.DisplayFor(modelItem => item.NoveltyShortContent) 
+                    <a href=" @link" class="more">докладніше</a></div>
+                    <div class="clear newsdelim"></div>                
+                        
+            </td>
+         
+            
+
+            <td>
+                @if (TempData.Peek("_UserRole") as string == "Admin")
+                {
+                    @Html.ActionLink("Edit", "Edit", new { id = item.NoveltyId })<br /> 
+                    @Html.ActionLink("Details", "Details", new { id = item.NoveltyId }) <br />
+                    @Html.ActionLink("Delete", "Delete", new { id = item.NoveltyId })<br />
+                }
+            </td>
+        </tr>
+    }
+
+</table>

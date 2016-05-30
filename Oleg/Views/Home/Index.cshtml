@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Домашняя страница";
+  
+}
+
+@section Owl
+    {
+    <!-- owl styles -->
+    <link rel="stylesheet" href="~/Content/OwlCarousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/Content/OwlCarousel/owl.theme.default.css" />
+}
+
+
+
+ @Html.Action("Index","Novelties")
+
+@section Picker{
+    <script src="~/Content/js/query.js"></script>
+    <script src="~/Content/js/jquery.datetimepicker.full.js"></script>
+
+   
+
+    <script>
+        $.datetimepicker.setLocale('uk');
+
+        $('#datetimepicker_format').datetimepicker({ value: '2015/04/15 05:03', format: $("#datetimepicker_format_value").val() });
+        $("#datetimepicker_format_change").on("click", function (e) {
+            $("#datetimepicker_format").data('xdsoft_datetimepicker').setOptions({ format: $("#datetimepicker_format_value").val() });
+        });
+        $("#datetimepicker_format_locale").on("change", function (e) {
+            $.datetimepicker.setLocale($(e.currentTarget).val());
+        });
+
+        $('#datetimepicker').datetimepicker({
+            dayOfWeekStart: 1,
+            lang: 'uk',
+            disabledDates: ['1986/01/08', '1986/01/09', '1986/01/10'],
+            startDate: '1986/01/05'
+        });
+        $('#datetimepicker').datetimepicker({ value: '2015/04/15 05:03', step: 10 });
+
+        $('.some_class').datetimepicker({ format: "d/m/Y" });
+
+        $('#datetimepicker_dark').datetimepicker({ theme: 'dark' });
+    </script>
+
+ 
+
+    <script src="~/Content/OwlCarousel/jquery-1.9.1.min.js"></script>
+    <script src="~/Content/OwlCarousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#carousel").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5500,
+                items: 3,
+                loop: true,
+                margin: 10,
+                nav: true,
+                //responsive: {
+                //    0: {
+                //        items: 1
+                //    },
+                //    600: {
+                //        items: 3
+                //    },
+                //    1000: {
+                //        items: 5
+                //    }
+                //}
+            })
+        })
+    </script>
+
+}

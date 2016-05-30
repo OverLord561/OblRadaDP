@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Oleg.Models.Leadership>
+
+@{
+    ViewBag.Title = "Review";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts
+        {
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="http://scriptjava.net/source/scriptjava/scriptjava.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", init, false);
+        function init() {
+            if (localStorage['frm_reload'] !== undefined) {
+                delete localStorage['frm_reload'];
+                mess();
+            }
+            var a = document.getElementById('but');
+
+            function mess() {
+                alert("Дякуємо, за Ваш коментар!");
+            }
+            a.addEventListener("click", reload, false);
+
+            function reload() {
+                localStorage['frm_reload'] = '1';
+                document.location.reload();
+                document.cookie = "golos";
+            }
+        }
+    </script>
+}
+
+<div class="content">
+ <div class="row">
+     <div class="col-lg-9 contentMargine">
+@foreach (var item in Model)
+{
+    string NUM=item.LeadershipId.ToString();
+    string declaration = "/Leaderships/Declaration?LeadershipId=" + item.LeadershipId;
+    string way = @item.LeadershipPhoto.ToString();
+    string link = "/Leaderships/Review?num=" + @item.LeadershipId.ToString();
+    <div>
+        <a href="@link">
+            <img  src="@way" height="200" width="250" alt="@item.LeadershipName"/>
+
+        </a>
+    </div>
+    <br />
+    <h1>@Html.DisplayFor(modelItem => item.LeadershipName) </h1>  <h4>@Html.DisplayFor(modelItem => item.LeadershipPost)</h4> 
+    
+   @item.LeadershipBiography <br />
+
+    @Html.RouteLink("Переглянути декларацію", new { controller = "Leaderships", action = "Declaration", LeadershipId = item.LeadershipId },new { target = "_blank" }) <br />
+
+    <a target="_blank" href="@declaration">Переглянути декларацію</a><br />
+    @Html.Action("LabelView", "Leaderships", new { num =  NUM})
+    
+}
+
+
+</div>
+     </div>
+    </div>

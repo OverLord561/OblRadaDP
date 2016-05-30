@@ -1,0 +1,232 @@
+﻿body {
+    background: url(/Images/oda_fon.jpg) center 0 no-repeat #2175bd;
+}
+table {
+    margin-top:10px;
+}
+ul, ol, dd, dl {
+    list-style: none;
+}
+.whiteLinks a{
+    color: #fff;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: #02579F;
+    margin: 0 0 10px 0;
+    line-height: 100%;
+}
+h2 {
+    color: #fff;
+text-transform: uppercase;
+font-weight: 900;
+text-align: center;
+margin: 35px;
+}
+.container-margin {
+    margin: 0 12%;
+}
+.margin-0 {
+    margin: 1% 3%;
+    border: solid 3px  #468ec1;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #215fa6, #0e2165);
+}
+.navbar-default .navbar-nav > li > a {
+    color: #66a9d5;
+}
+.navbar-nav > li:hover{
+    color: #fff;
+    background-color: #66a9d5;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color: #fff;
+}
+.navbar-nav li {
+    color: #66a9d5;
+}
+
+.carousel-box {
+    background-color: #2978ba;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px 3px rgba(31,66,132,1);   
+    margin-bottom: 10px;
+}
+.search {
+    border-radius: 5px;
+    margin: 8px 9px 0 4px;
+    padding: 5px;
+    background: linear-gradient(to bottom, #215fa6, #0e2165);
+    color: #66a9d5;
+}
+.search input[name='start'],
+.search input[name='end'] {
+    float: right;
+    margin-top: 5px;
+}
+    .search label {
+        margin-top: 10px;
+    }
+.content {
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px 4px rgba(55,96,154,1);
+    background-color: #fff;
+}
+#tabledata {
+    margin-left: -30px;
+    margin-top: 10px;
+    box-shadow: 5px -2px 4px -4px rgba(208,211,226,1);
+}
+.newsnode {
+    width: auto;
+    margin: 0 20px 15px 0px;
+    font: normal 13px Arial;
+}
+h3 {
+    background-color: #FFF1CD;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+h3 a {
+    font: bold 13px Arial;
+    color: #001b7c;
+    text-decoration: none;
+}
+.date {
+    font: normal 10px Arial;
+    background-color: #0096D9;
+    border-radius: 3px;
+    padding: 1px 3px;
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+.newsnode img {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 150px;
+}
+.newsdelim {
+    margin: 10px 20px 10px 0px;
+    background-color: #DDE5F2;
+    border-radius: 3px;
+    width: auto;
+    height: 10px;
+}
+.clear {
+    clear: both;
+}
+
+#admin {
+    background-color: #EEF3F8;
+    border-color: #C6D0D8;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 8px 9px 0 4px;
+    padding: 5px;
+}
+#admin dd {
+       padding: 3px 0 5px 5px;
+    background: url(/Images/toch1.gif) 0 top repeat-x;
+}
+.d_ad {
+    font: bold 13px Arial;
+    color: #001b7c;
+    background: url(/Images/fich1.gif) 0 center no-repeat;
+    padding: 0 0 0 7px;
+    display: block;
+    text-decoration: none;
+}
+#adminPanel {
+    background: linear-gradient(to bottom, #215fa6, #0e2165);
+    border-color: #C6D0D8;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+#adminPanel dd {
+   background: url(/Images/fich1.gif) 0 center no-repeat;
+     padding: 3px 0 5px 5px;
+}
+#adminPanel a{
+    color: #66a9d5;
+}
+#adminPanel a:hover {
+    color: #fff;
+}
+.adminh {
+    position: relative;
+    font: bold 14px Arial;
+    color: #001b7c;
+    padding: 0 0 0 25px;
+    margin: 5px 0 10px 15px;
+}
+.adminh:before {
+    content: url(/Images/gadmgerb.gif);
+    position:absolute;
+    left: -5px;
+    top: 5px;
+}
+.context, td {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 14px;
+    padding: 5px;
+}
+.context img {
+    margin: 0 8px;
+}
+fieldset {
+    padding: 5px;
+    margin: 10px;
+    max-width: 25%;
+}
+.title {
+    margin-left: 10px;
+    padding: 5px;
+}
+.registerIf {
+    margin: 15px;
+    padding-bottom: 10px;
+}
+.infoLeader {
+    padding-top: 30px;
+}
+.create {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.contentMargine {
+    margin-top: 20px;
+    margin-left:20px;
+}
+.feedback-date {
+    float: right;
+}
+.feedback-text {
+    background-color: #66a9d5;
+    padding: 7px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.feedback-answer {
+     background-color: #FFF1CD;
+    padding: 7px;   
+        margin-bottom: 5px;
+    border-radius: 5px;
+}
+.feedback-answer p {
+    margin-left: 10%;
+}
+.answer {
+    margin-top: 10px;
+}
+.editor-field input {
+   width: 400px;
+  
+}

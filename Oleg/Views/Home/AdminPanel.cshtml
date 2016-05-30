@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "AdminPanel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content">
+    <div class="row">
+
+        <div class="col-lg-3">
+
+            <div id="adminPanel">
+                <dl>
+                    <dd >@Html.ActionLink("Перейти до новин", "Index", "Novelties")</dd>
+                    <dd >@Html.ActionLink("Перейти до виконаних робіт", "Index", "Outlaies")</dd>
+                    <dd >@Html.ActionLink("Фірми", "Index", "Factories")</dd>
+                    <dd >@Html.ActionLink("Вакансії", "Index", "Jobs")</dd>
+                    <dd >@Html.ActionLink("Коментарі користувачів", "Index", "UserComments")</dd>
+                    <dd >@Html.ActionLink("Видалити користувача", "DeleteUser", "Home")</dd>
+
+                    <dd >@Html.ActionLink("Керівництво", "Index", "Leaderships")</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <h2>AdminPanel</h2>
+            <p>Правила для адміністратора</p>
+        </div>
+    </div>
+</div>
